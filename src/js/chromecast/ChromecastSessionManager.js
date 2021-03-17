@@ -176,6 +176,7 @@ ChromecastSessionManager = Class.extend(/** @lends ChromecastSessionManager.prot
     * Video.js player does not have a source.
     */
    openCastMenu: function() {
+      var onSessionSuccess;
       if (!this.player.currentSource()) {
          // Do not cast if there is no media item loaded in the player
          return;
