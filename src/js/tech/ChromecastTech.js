@@ -218,6 +218,7 @@ ChromecastTech = {
           mediaInfo = new chrome.cast.media.MediaInfo(),
           title = this._requestTitle(source),
           subtitle = this._requestSubtitle(source),
+          poster = this.poster(),
           customData = this._requestCustomData(source),
           textTrackJsonTracks = this.videojsPlayer.textTracksJson_,
           request,
@@ -244,6 +245,9 @@ ChromecastTech = {
          }
       }
 
+      if (poster) {
+         mediaInfo.metadata.images = [ { url: poster } ];
+      }
       if (customData) {
          mediaInfo.customData = customData;
       }
