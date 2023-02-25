@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [our coding standards][commit-messages] for commit guidelines.
 
+### [1.13.1](https://github.com/guaclive/videojs-chromecast/compare/v1.13.0...v1.13.1) (2023-02-25)
+
+
+### Bug Fixes
+
+* add isSupported ([caac930](https://github.com/guaclive/videojs-chromecast/commit/caac930d00436f188c0542af46de78f135a3b9e2))
+
+
 ## 1.13.0 (2023-02-25)
 
 
